@@ -1,0 +1,1 @@
+#ifdef __cplusplus
