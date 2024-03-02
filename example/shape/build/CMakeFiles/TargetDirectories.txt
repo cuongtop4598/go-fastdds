@@ -1,0 +1,4 @@
+/home/dev/go/src/go-fastdds/example/shape/build/CMakeFiles/Shape_lib.dir
+/home/dev/go/src/go-fastdds/example/shape/build/CMakeFiles/Shape.dir
+/home/dev/go/src/go-fastdds/example/shape/build/CMakeFiles/edit_cache.dir
+/home/dev/go/src/go-fastdds/example/shape/build/CMakeFiles/rebuild_cache.dir

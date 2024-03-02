@@ -1,6 +1,6 @@
-# go-fastdds
+# Go-fastdds
 
-Golang connector for eProsima Fast DDS
+Simple Golang connector for eProsima Fast DDS
 
 ## Installation
 
@@ -35,3 +35,7 @@ Golang connector for eProsima Fast DDS
   #include <sys/syscall.h>
   #define gettid() syscall(SYS_gettid)
   `
+
+## Generate c++ sample
+>
+> fastddsgen -example CMake Shape.idl

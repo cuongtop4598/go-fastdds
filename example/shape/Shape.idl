@@ -1,0 +1,6 @@
+struct Shape
+{
+   string color;
+   long position_x;
+   long position_y;
+};
