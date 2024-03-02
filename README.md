@@ -29,10 +29,9 @@ Golang connector for eProsima Fast DDS
   > sudo make
 
 - ‘gettid’ was not declared in this scope
-  > open ./eProsima_Fast-DDS-v2xxx-Linux/src/fastrtps/
-  > edit CMakeLists.txt with TextEditor
-  > add -pthread to build options in 
-  `else()
-    set(CMAKE_CXX_FLAGS
-        "${CMAKE_CXX_FLAGS} -pthread -Wall -pedantic -Wextra -Wno-unknown-pragmas -Wno-error=deprecated-declarations")
+  > open the file build error with IDE Editor
+  > add following in header file
+  `
+  #include <sys/syscall.h>
+  #define gettid() syscall(SYS_gettid)
   `
