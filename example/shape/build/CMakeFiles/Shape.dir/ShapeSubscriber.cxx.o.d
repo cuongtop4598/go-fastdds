@@ -1,5 +1,5 @@
 CMakeFiles/Shape.dir/ShapeSubscriber.cxx.o: \
- /home/dev/go/src/go-fastdds/example/shape/ShapeSubscriber.cxx \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapeSubscriber.cxx \
  /usr/include/stdc-predef.h \
  /usr/local/include/fastdds/dds/domain/DomainParticipantFactory.hpp \
  /usr/local/include/fastrtps/attributes/ParticipantAttributes.h \
@@ -346,7 +346,7 @@ CMakeFiles/Shape.dir/ShapeSubscriber.cxx.o: \
  /usr/local/include/fastrtps/attributes/TopicAttributes.h \
  /usr/local/include/fastrtps/qos/ReaderQos.h \
  /usr/local/include/fastdds/dds/topic/qos/TopicQos.hpp \
- /home/dev/go/src/go-fastdds/example/shape/ShapeSubscriber.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapeSubscriber.h \
  /usr/local/include/fastdds/dds/domain/DomainParticipant.hpp \
  /usr/local/include/fastdds/dds/builtin/topic/ParticipantBuiltinTopicData.hpp \
  /usr/local/include/fastdds/dds/builtin/topic/TopicBuiltinTopicData.hpp \
@@ -358,8 +358,8 @@ CMakeFiles/Shape.dir/ShapeSubscriber.cxx.o: \
  /usr/local/include/fastrtps/types/TypeDescriptor.h \
  /usr/local/include/fastrtps/types/AnnotationDescriptor.h \
  /usr/local/include/fastdds/dds/topic/TopicListener.hpp \
- /home/dev/go/src/go-fastdds/example/shape/ShapePubSubTypes.h \
- /home/dev/go/src/go-fastdds/example/shape/Shape.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePubSubTypes.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/Shape.h \
  /usr/local/include/fastcdr/cdr/fixed_size_string.hpp \
  /usr/local/include/fastcdr/xcdr/external.hpp \
  /usr/local/include/fastcdr/xcdr/optional.hpp

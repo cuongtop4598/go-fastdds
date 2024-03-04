@@ -1,4 +1,4 @@
-# Install script for directory: /home/dev/go/src/go-fastdds/example/shape
+# Install script for directory: /home/dev/go/src/github.com/go-fastdds/example/shape
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dev/go/src/go-fastdds/example/shape/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dev/go/src/github.com/go-fastdds/example/shape/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

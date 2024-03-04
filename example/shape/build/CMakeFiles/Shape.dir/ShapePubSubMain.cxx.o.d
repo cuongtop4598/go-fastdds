@@ -1,7 +1,7 @@
 CMakeFiles/Shape.dir/ShapePubSubMain.cxx.o: \
- /home/dev/go/src/go-fastdds/example/shape/ShapePubSubMain.cxx \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePubSubMain.cxx \
  /usr/include/stdc-predef.h \
- /home/dev/go/src/go-fastdds/example/shape/ShapePublisher.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePublisher.h \
  /usr/local/include/fastdds/dds/domain/DomainParticipant.hpp \
  /usr/include/c++/7/functional \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -347,7 +347,7 @@ CMakeFiles/Shape.dir/ShapePubSubMain.cxx.o: \
  /usr/local/include/fastdds/dds/core/status/DeadlineMissedStatus.hpp \
  /usr/local/include/fastdds/dds/publisher/DataWriterListener.hpp \
  /usr/local/include/fastdds/dds/publisher/Publisher.hpp \
- /home/dev/go/src/go-fastdds/example/shape/ShapeSubscriber.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapeSubscriber.h \
  /usr/local/include/fastdds/dds/subscriber/DataReader.hpp \
  /usr/local/include/fastdds/dds/builtin/topic/PublicationBuiltinTopicData.hpp \
  /usr/local/include/fastdds/dds/core/LoanableSequence.hpp \

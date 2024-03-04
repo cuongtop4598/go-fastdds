@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dev/go/src/go-fastdds/example/shape/Shape.cxx" "CMakeFiles/Shape_lib.dir/Shape.cxx.o" "gcc" "CMakeFiles/Shape_lib.dir/Shape.cxx.o.d"
+  "/home/dev/go/src/github.com/go-fastdds/example/shape/Shape.cxx" "CMakeFiles/Shape_lib.dir/Shape.cxx.o" "gcc" "CMakeFiles/Shape_lib.dir/Shape.cxx.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

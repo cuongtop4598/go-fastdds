@@ -51,3 +51,15 @@ func NewShape(color string) unsafe.Pointer {
 func newPubSubType() unsafe.Pointer {
 	return C.NewPubSubType()
 }
+
+func NewSubscriber(participant unsafe.Pointer) unsafe.Pointer {
+	return C.FastddsCreateSubscriber(participant)
+}
+
+func NewSubscriberListener() unsafe.Pointer {
+	return C.FastddsCreateSubscriberListener()
+}
+
+func CreateDataReader(subscriber unsafe.Pointer, topic unsafe.Pointer, subListener unsafe.Pointer) {
+	C.FastddsCreateDataReader(subscriber, topic, subListener)
+}

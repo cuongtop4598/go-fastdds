@@ -1,7 +1,7 @@
 CMakeFiles/Shape_lib.dir/Shape.cxx.o: \
- /home/dev/go/src/go-fastdds/example/shape/Shape.cxx \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/Shape.cxx \
  /usr/include/stdc-predef.h \
- /home/dev/go/src/go-fastdds/example/shape/Shape.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/Shape.h \
  /usr/include/c++/7/array /usr/include/c++/7/utility \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -168,7 +168,7 @@ CMakeFiles/Shape_lib.dir/Shape.cxx.o: \
  /usr/local/include/fastcdr/fastcdr_dll.h \
  /usr/local/include/fastcdr/xcdr/optional.hpp /usr/include/malloc.h \
  /usr/local/include/fastcdr/exceptions/BadParamException.h \
- /home/dev/go/src/go-fastdds/example/shape/ShapeCdrAux.ipp \
- /home/dev/go/src/go-fastdds/example/shape/ShapeCdrAux.hpp \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapeCdrAux.ipp \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapeCdrAux.hpp \
  /usr/local/include/fastcdr/CdrSizeCalculator.hpp \
  /usr/include/c++/7/limits

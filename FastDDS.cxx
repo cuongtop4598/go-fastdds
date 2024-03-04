@@ -1,4 +1,5 @@
 #include "FastDDS.h"
+#include "./example/shape/Shape.h"
 #include <fastdds/dds/domain/DomainParticipantFactory.hpp>
 #include <fastdds/dds/publisher/Publisher.hpp>
 #include <fastdds/dds/publisher/qos/PublisherQos.hpp>
@@ -7,6 +8,7 @@
 
 #include <thread>
 #include <chrono>
+
 using namespace eprosima::fastdds::dds;
 
 extern "C" void *FastddsCreateParticipant(char *name)
@@ -84,4 +86,65 @@ void PubListener::on_publication_matched(
         std::cout << info.current_count_change
                   << " is not a valid value for PublicationMatchedStatus current count change" << std::endl;
     }
+}
+
+void SubListener::on_data_available(
+    DataReader *reader)
+{
+    // Take data
+    Shape st;
+    SampleInfo info;
+
+    if (reader->take_next_sample(&st, &info) == ReturnCode_t::RETCODE_OK)
+    {
+        if (info.valid_data)
+        {
+            // Print your structure data here.
+            ++samples;
+            std::cout << "Sample received, count=" << samples << std::endl;
+            std::cout << "Shape color: " << st.color() << " x: "  <<  st.position_x() << " " << "y: " << st.position_y() << std::endl;
+        }
+        else
+        {
+            std::cout << info.view_state << std::endl;
+        }
+    }
+}
+
+void SubListener::on_subscription_matched(
+    DataReader *,
+    const SubscriptionMatchedStatus &info)
+{
+    if (info.current_count_change == 1)
+    {
+        matched = info.total_count;
+        std::cout << "Subscriber matched." << std::endl;
+    }
+    else if (info.current_count_change == -1)
+    {
+        matched = info.total_count;
+        std::cout << "Subscriber unmatched." << std::endl;
+    }
+    else
+    {
+        std::cout << info.current_count_change
+                  << " is not a valid value for SubscriptionMatchedStatus current count change" << std::endl;
+    }
+}
+
+extern "C" void *FastddsCreateSubscriberListener() 
+{
+    return (void *) new SubListener();
+}
+
+extern "C" void *FastddsCreateSubscriber(void *participant)
+{
+    return  (void *)((eprosima::fastdds::dds::DomainParticipant *)participant)->create_subscriber(SUBSCRIBER_QOS_DEFAULT, nullptr);
+}
+
+extern "C" void *FastddsCreateDataReader(void *subscriber,void* topic, void* subListener)
+{
+    DataReaderQos rqos = DATAREADER_QOS_DEFAULT;
+    rqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
+    return (void*)((eprosima::fastdds::dds::Subscriber*)subscriber)->create_datareader((eprosima::fastdds::dds::Topic*)topic, rqos, (SubListener*)subListener);
 }

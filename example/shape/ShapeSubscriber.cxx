@@ -31,11 +31,7 @@
 using namespace eprosima::fastdds::dds;
 
 ShapeSubscriber::ShapeSubscriber()
-    : participant_(nullptr)
-    , subscriber_(nullptr)
-    , topic_(nullptr)
-    , reader_(nullptr)
-    , type_(new ShapePubSubType())
+    : participant_(nullptr), subscriber_(nullptr), topic_(nullptr), reader_(nullptr), type_(new ShapePubSubType())
 {
 }
 
@@ -58,7 +54,7 @@ ShapeSubscriber::~ShapeSubscriber()
 
 bool ShapeSubscriber::init()
 {
-    //CREATE THE PARTICIPANT
+    // CREATE THE PARTICIPANT
     DomainParticipantQos pqos;
     pqos.name("Participant_sub");
     participant_ = DomainParticipantFactory::get_instance()->create_participant(0, pqos);
@@ -67,17 +63,17 @@ bool ShapeSubscriber::init()
         return false;
     }
 
-    //REGISTER THE TYPE
+    // REGISTER THE TYPE
     type_.register_type(participant_);
 
-    //CREATE THE SUBSCRIBER
+    // CREATE THE SUBSCRIBER
     subscriber_ = participant_->create_subscriber(SUBSCRIBER_QOS_DEFAULT, nullptr);
     if (subscriber_ == nullptr)
     {
         return false;
     }
 
-    //CREATE THE TOPIC
+    // CREATE THE TOPIC
     topic_ = participant_->create_topic(
         "ShapeTopic",
         type_.get_type_name(),
@@ -87,7 +83,7 @@ bool ShapeSubscriber::init()
         return false;
     }
 
-    //CREATE THE READER
+    // CREATE THE READER
     DataReaderQos rqos = DATAREADER_QOS_DEFAULT;
     rqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
     reader_ = subscriber_->create_datareader(topic_, rqos, &listener_);
@@ -100,8 +96,8 @@ bool ShapeSubscriber::init()
 }
 
 void ShapeSubscriber::SubListener::on_subscription_matched(
-        DataReader*,
-        const SubscriptionMatchedStatus& info)
+    DataReader *,
+    const SubscriptionMatchedStatus &info)
 {
     if (info.current_count_change == 1)
     {
@@ -121,7 +117,7 @@ void ShapeSubscriber::SubListener::on_subscription_matched(
 }
 
 void ShapeSubscriber::SubListener::on_data_available(
-        DataReader* reader)
+    DataReader *reader)
 {
     // Take data
     Shape st;
@@ -134,8 +130,10 @@ void ShapeSubscriber::SubListener::on_data_available(
             // Print your structure data here.
             ++samples;
             std::cout << "Sample received, count=" << samples << std::endl;
-            std::cout << "Shape color: " << st.color() << std::endl;
-        } else {
+            std::cout << "Shape color: " << st.color() << " x: "  <<  st.position_x() << " " << "y: " << st.position_y() << std::endl;
+        }
+        else
+        {
             std::cout << info.view_state << std::endl;
         }
     }

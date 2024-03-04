@@ -1,5 +1,5 @@
 CMakeFiles/Shape.dir/ShapePubSubTypes.cxx.o: \
- /home/dev/go/src/go-fastdds/example/shape/ShapePubSubTypes.cxx \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePubSubTypes.cxx \
  /usr/include/stdc-predef.h \
  /usr/local/include/fastdds/rtps/common/CdrSerialization.hpp \
  /usr/local/include/fastcdr/Cdr.h /usr/include/c++/7/array \
@@ -166,7 +166,7 @@ CMakeFiles/Shape.dir/ShapePubSubTypes.cxx.o: \
  /usr/local/include/fastcdr/exceptions/BadOptionalAccessException.hpp \
  /usr/include/malloc.h /usr/local/include/fastcdr/CdrSizeCalculator.hpp \
  /usr/include/c++/7/limits \
- /home/dev/go/src/go-fastdds/example/shape/ShapePubSubTypes.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePubSubTypes.h \
  /usr/local/include/fastdds/dds/core/policy/QosPolicies.hpp \
  /usr/local/include/fastdds/dds/core/policy/ParameterTypes.hpp \
  /usr/local/include/fastdds/rtps/common/all_common.h \
@@ -303,8 +303,8 @@ CMakeFiles/Shape.dir/ShapePubSubTypes.cxx.o: \
  /usr/local/include/fastdds/dds/topic/TopicDataType.hpp \
  /usr/local/include/fastrtps/utils/md5.h \
  /usr/local/include/fastrtps/fastrtps_dll.h \
- /home/dev/go/src/go-fastdds/example/shape/Shape.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/Shape.h \
  /usr/local/include/fastcdr/cdr/fixed_size_string.hpp \
  /usr/local/include/fastcdr/xcdr/external.hpp \
  /usr/local/include/fastcdr/xcdr/optional.hpp \
- /home/dev/go/src/go-fastdds/example/shape/ShapeCdrAux.hpp
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapeCdrAux.hpp

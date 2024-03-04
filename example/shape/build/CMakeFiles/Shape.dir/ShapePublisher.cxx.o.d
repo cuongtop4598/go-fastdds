@@ -1,7 +1,7 @@
 CMakeFiles/Shape.dir/ShapePublisher.cxx.o: \
- /home/dev/go/src/go-fastdds/example/shape/ShapePublisher.cxx \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePublisher.cxx \
  /usr/include/stdc-predef.h \
- /home/dev/go/src/go-fastdds/example/shape/ShapePublisher.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePublisher.h \
  /usr/local/include/fastdds/dds/domain/DomainParticipant.hpp \
  /usr/include/c++/7/functional \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
@@ -347,8 +347,8 @@ CMakeFiles/Shape.dir/ShapePublisher.cxx.o: \
  /usr/local/include/fastdds/dds/core/status/DeadlineMissedStatus.hpp \
  /usr/local/include/fastdds/dds/publisher/DataWriterListener.hpp \
  /usr/local/include/fastdds/dds/publisher/Publisher.hpp \
- /home/dev/go/src/go-fastdds/example/shape/ShapePubSubTypes.h \
- /home/dev/go/src/go-fastdds/example/shape/Shape.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/ShapePubSubTypes.h \
+ /home/dev/go/src/github.com/go-fastdds/example/shape/Shape.h \
  /usr/local/include/fastcdr/cdr/fixed_size_string.hpp \
  /usr/local/include/fastcdr/xcdr/external.hpp \
  /usr/local/include/fastcdr/xcdr/optional.hpp \
